@@ -1,0 +1,17 @@
+let myLibrary = [];
+
+class Book {
+    constructor(name, author, pages, isRead) {
+        this.name = name;
+        console.log(name, '=>',this,this.name)
+        this.author = author;
+        this.pages = pages;
+        this.isRead = isRead;
+    }
+    info= () => {
+        return `${this.name}, ${this.author},${this.pages},${this.isRead}`
+    }
+}
+
+
+bookTest = new Book("hobbit", "JR tolkien", "500", false);
