@@ -1,5 +1,9 @@
 let myLibrary = [];
 
+let inputBookName = document.querySelector("#bookName")
+let inputBookAuthor = document.querySelector("#bookAuthor")
+let inputBookPages = document.querySelector("#bookPages")
+
 class Book {
     constructor(name, author, pages, isRead) {
         this.name = name;
@@ -11,6 +15,10 @@ class Book {
     info= () => {
         return `${this.name}, ${this.author},${this.pages},${this.isRead}`
     }
+}
+
+function addBookToLibrary(book) {
+    console.log(inputBookName.value,inputBookAuthor.value,inputBookPages.value)
 }
 
 
